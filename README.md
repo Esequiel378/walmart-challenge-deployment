@@ -7,6 +7,8 @@ the [Backend](https://github.com/Esequiel378/walmart-challenge-backend) and the
 [Frontend](https://github.com/Esequiel378/walmart-challenge-frontend) of this
 challenge in the same server
 
+Live demo [http://165.22.3.102/docs](http://165.22.3.102/docs)
+
 ## Setup
 
 First you need to get the source code for all the repositories
@@ -60,4 +62,4 @@ docker-compose -f production.yml up
 
 Now you can visit your server ip and you will see the Frontend app running
 
-Locally you cant go to http://localhost
+Locally you cant go to [http://165.22.3.102/docs](http://165.22.3.102/docs)
