@@ -17,7 +17,9 @@ http:
       priority: 1
 
     api-router:
-      rule: "PathPrefix(`/api`) || PathPrefix(`/docs`)"
+      # ideally this would be filter by host
+      # somethig like Host(`linder.backend`)
+      rule: "PathPrefix(`/api`, `/docs`, `/openapi`)"
       entryPoints:
         - web
       service: api
