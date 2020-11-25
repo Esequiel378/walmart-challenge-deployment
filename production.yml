@@ -7,7 +7,7 @@ volumes:
 services:
   frontend:
     build:
-      context: ../waltmart-challenge-frontend
+      context: ../walmart-challenge-frontend
       dockerfile: Dockerfile
       target: production
     image: production_wallmart_challenge_frontend
@@ -19,7 +19,7 @@ services:
 
   api:
     build:
-      context: ../waltmart-challenge-backend
+      context: ../walmart-challenge-backend
       dockerfile: ./compose/api/Dockerfile
       target: production
     env_file: .env
@@ -44,7 +44,7 @@ services:
 
   mongo-seed:
     build:
-      context: ../waltmart-challenge-backend
+      context: ../walmart-challenge-backend
       dockerfile: ./compose/database/Dockerfile
       target: production
     container_name: mongo-seed
