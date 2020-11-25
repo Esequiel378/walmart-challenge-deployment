@@ -49,6 +49,7 @@ with the [Backend](https://github.com/Esequiel378/walmart-challenge-backend)
 .env file, in order to avoid conflicts in the future
 
 ```shell
+# within the root directory
 ln ../walmart-challenge-backend/.env .env
 ```
 
