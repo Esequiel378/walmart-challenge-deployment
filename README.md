@@ -23,7 +23,7 @@ git clone https://github.com/Esequiel378/walmart-challenge-deployment.git
 
 ### The .env files
 
-Each of this projects needs it own .env file, you can refere to they README
+Each of this projects needs its own .env file, you can refere to they README
 
 + [Backend README](https://github.com/Esequiel378/walmart-challenge-backend/blob/master/README.md)
 
@@ -42,7 +42,7 @@ and yes, you do, in order to build the database container, the project need some
 variables from de [Backend](https://github.com/Esequiel378/walmart-challenge-backend)
 project.
 
-The best way to achieve this, is simple creating a symlinc
+The best way to achieve this, is just creating a symlinc
 with the [Backend](https://github.com/Esequiel378/walmart-challenge-backend)
 .env file, in order to avoid conflicts in the future
 
@@ -60,6 +60,11 @@ docker-compose -f production.yml build
 docker-compose -f production.yml up
 ```
 
-Now you can visit your server ip and you will see the Frontend app running
+Now you can visit your server ip and you will see the [Frontend](https://github.com/Esequiel378/walmart-challenge-frontend)
+App running
 
 Locally you cant go to [http://165.22.3.102](http://165.22.3.102)
+
+## TODO
+
+- [ ] Create a BFF
