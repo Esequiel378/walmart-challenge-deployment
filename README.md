@@ -25,7 +25,7 @@ git clone https://github.com/Esequiel378/walmart-challenge-deployment.git
 
 ### The .env files
 
-Each of this projects needs its own .env file, you can refere to they README
+Each of these projects needs its own .env file, you can refere to they README
 
 + [Backend README](https://github.com/Esequiel378/walmart-challenge-backend/blob/master/README.md)
 
