@@ -63,10 +63,10 @@ docker-compose -f production.yml build
 docker-compose -f production.yml up
 ```
 
-Now you can visit your server ip and you will see the [Frontend](https://github.com/Esequiel378/walmart-challenge-frontend)
+Now you can visit your server ip or domain and you will see the [Frontend](https://github.com/Esequiel378/walmart-challenge-frontend)
 App running
 
-Now you can visit http://localhost
+Or you can visit http://localhost if your are running locally
 
 ## Related Projects
 
