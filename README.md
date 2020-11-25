@@ -53,17 +53,17 @@ ln ../walmart-challenge-backend/.env .env
 Since the project use docker-compose, you can deploy by running
 
 ```shell
+# build api and database images
 docker-compose -f production.yml build
-```
 
-```shell
+# create api and database containers
 docker-compose -f production.yml up
 ```
 
 Now you can visit your server ip and you will see the [Frontend](https://github.com/Esequiel378/walmart-challenge-frontend)
 App running
 
-Locally you cant go to [http://165.22.3.102](http://165.22.3.102)
+Now you can visit http://localhost
 
 ## Related Projects
 
