@@ -29,11 +29,11 @@ Each of this projects needs it own .env file, you can refere to they README
 
 This project need a .env file in the root directory, with the next variables
 
-+ DATABASE_HOST=database
-
-+ DATABASE_USERNAME=root
-
-+ DATABASE_PASSWORD=secret
+```Python
+DATABASE_HOST=database
+DATABASE_USERNAME=root
+DATABASE_PASSWORD=secret
+```
 
 They may looks familiar to you, even you may think that you see them before,
 and yes, you do, in order to build the database container, the project need some
