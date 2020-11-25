@@ -76,3 +76,5 @@ Now you can visit http://localhost
 ## TODO
 
 - [ ] Create a BFF
+
+- [ ] SSL cerificates
