@@ -65,6 +65,12 @@ App running
 
 Locally you cant go to [http://165.22.3.102](http://165.22.3.102)
 
+## Related Projects
+
++ Lider demo frontend https://github.com/Esequiel378/walmart-challenge-frontend
+
++ Lider demo backend https://github.com/Esequiel378/walmart-challenge-backend
+
 ## TODO
 
 - [ ] Create a BFF
