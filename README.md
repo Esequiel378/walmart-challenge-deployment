@@ -2,10 +2,9 @@
 
 ## Description
 
-This repository have the purpose of make the life easier while deploying
-the [Backend](https://github.com/Esequiel378/walmart-challenge-backend) and the
-[Frontend](https://github.com/Esequiel378/walmart-challenge-frontend) of this
-challenge in the same server
+This repository's purpose is to handle both [Backend](https://github.com/Esequiel378/walmart-challenge-backend)
+and [Frontend](https://github.com/Esequiel378/walmart-challenge-frontend)
+deploy in the same server for this challenge
 
 Live demo [lider.co](http://165.22.3.102)
 
