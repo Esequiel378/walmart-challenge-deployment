@@ -2,7 +2,7 @@
 
 ## Description
 
-This repository exist with the propose of make the life easier while deploying
+This repository have the purpose of make the life easier while deploying
 the [Backend](https://github.com/Esequiel378/walmart-challenge-backend) and the
 [Frontend](https://github.com/Esequiel378/walmart-challenge-frontend) of this
 challenge in the same server
