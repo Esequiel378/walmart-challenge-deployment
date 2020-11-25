@@ -17,7 +17,7 @@ http:
       priority: 1
 
     api-router:
-      rule: "PathPrefix(`/api`)"
+      rule: "PathPrefix(`/api`) || PathPrefix(`/docs`)"
       entryPoints:
         - web
       service: api
