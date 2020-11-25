@@ -14,8 +14,10 @@ Live demo [lider.co](http://165.22.3.102)
 First you need to get the source code for all the repositories
 
 ```shell
+# Api - backend
 git clone https://github.com/Esequiel378/walmart-challenge-backend.git
 
+# Web App - frontend
 git clone https://github.com/Esequiel378/walmart-challenge-frontend.git
 
 git clone https://github.com/Esequiel378/walmart-challenge-deployment.git
