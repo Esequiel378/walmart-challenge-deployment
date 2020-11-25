@@ -1,0 +1,65 @@
+version: '3'
+
+volumes:
+  production_traefik: {}
+  mongodb_production: {}
+
+services:
+  frontend:
+    build:
+      context: ../waltmart-challenge-frontend
+      dockerfile: Dockerfile
+      target: production
+    image: production_wallmart_challenge_frontend
+    container_name: frontend_container
+    ports:
+      - "3000:3000"
+    depends_on:
+      - database
+
+  api:
+    build:
+      context: ../waltmart-challenge-backend
+      dockerfile: ./compose/api/Dockerfile
+      target: production
+    env_file: .env
+    container_name: api
+    ports:
+      - "5000:5000"
+    depends_on:
+      - database
+
+  database:
+    image: mongo:3.6.8
+    container_name: database
+    env_file: .env
+    environment:
+      - MONGO_INITDB_DATABASE=${DATABASE_NAME}
+      - MONGO_INITDB_ROOT_USERNAME=${DATABASE_USERNAME}
+      - MONGO_INITDB_ROOT_PASSWORD=${DATABASE_PASSWORD}
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_production:/data/db
+
+  mongo-seed:
+    build:
+      context: ../waltmart-challenge-backend
+      dockerfile: ./compose/database/Dockerfile
+      target: production
+    container_name: mongo-seed
+    env_file: .env
+    depends_on:
+      - database
+
+  traefik:
+    build:
+      context: .
+      dockerfile: ./compose/traefik/Dockerfile
+    image: production_traefik
+    depends_on:
+      - api
+    volumes:
+      - production_traefik:/etc/traefik/acme
+    ports:
+      - "80:80"

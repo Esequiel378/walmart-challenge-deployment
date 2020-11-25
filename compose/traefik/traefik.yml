@@ -1,0 +1,41 @@
+log:
+  level: INFO
+  # level: DEBUG
+
+entryPoints:
+  web:
+    # http
+    address: ":80"
+
+http:
+  routers:
+    frontend-router:
+      rule: "PathPrefix(`/`)"
+      entryPoints:
+        - web
+      service: frontend
+      priority: 1
+
+    api-router:
+      rule: "PathPrefix(`/api`)"
+      entryPoints:
+        - web
+      service: api
+      priority: 2
+
+  services:
+    frontend:
+      loadBalancer:
+        servers:
+          - url: http://frontend:3000
+    api:
+      loadBalancer:
+        servers:
+          - url: http://api:5000
+
+providers:
+  # https://docs.traefik.io/master/providers/file/
+  file:
+    filename: /etc/traefik/traefik.yml
+    watch: true
+
